@@ -12,7 +12,7 @@ interface RankingListControllProps {
 export function RankingListControll({ nextPage, prevPage, reSize, page, size, totalPages }: RankingListControllProps) {
 
     return (
-        <div className="flex flex-col gap-2 w-md lg:w-2xl mt-25 mb-2 bg-slate-200 rounded-md">
+        <div className="flex flex-col gap-2 w-sm md:w-md lg:w-2xl mt-25 mb-2 bg-slate-200 rounded-md">
             <h2 className="font-semibold text-2xl text-slate-600 p-2">ATP <span className="text-lg italic font-bold text-blue-400 tracking-wide">RANKING</span></h2>
             <div className="flex justify-between mx-2 pb-4">
                 <button onClick={prevPage} className="w-10 h-10 rounded-full bg-slate-400 flex items-center justify-center cursor-pointer border border-slate-500 shadow-lg">
