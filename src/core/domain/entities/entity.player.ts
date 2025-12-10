@@ -5,7 +5,7 @@ export type Player = {
     country: string;
     forehand: string;
     backhand: string;
-    birthdate: Date;
+    birthDate: Date;
     height: number;
     weight: number;
     urlPhoto: string;

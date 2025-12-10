@@ -4,7 +4,7 @@ export type PlayerRequestDto = {
     country: string;
     forehand: string;
     backhand: string;
-    birthdate: Date;
+    birthDate: Date;
     height: number;
     weight: number;
     urlPhoto: string;
@@ -17,7 +17,7 @@ export type PlayerResponseDto = {
     country: string;
     forehand: string;
     backhand: string;
-    birthdate: Date;
+    birthDate: string;
     height: number;
     weight: number;
     urlPhoto: string;

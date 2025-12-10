@@ -21,11 +21,12 @@ export class PlayerRepositoryImpl implements PlayerRepository {
         return data;
     }
     async getPlayerByName(name: string): Promise<Player[]> {
-       const { data } = await api.get<Player[]>(`/players/name/${name}`);
+       const { data } = await api.get<Player[]>(`/players/search?name=${name}`);
         return data
     }
     async getAllPlayers(page?: number, size?: number): Promise<Player[]> {
         const { data } = await api.get<Player[]>(`/players?page=${page}&size=${size}`);
+        console.log(data)
         return data;
     }
 }
