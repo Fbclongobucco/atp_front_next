@@ -34,7 +34,7 @@ export function SearchPlayerModal({ isVisible, onClose, setPlayer }: SearchPlaye
             <button onClick={handleClose} className="absolute top-4 right-10 w-10 h-10 border flex justify-center items-center rounded-sm cursor-pointer">
                 <X size={30} color="#e3e1f0" />
             </button>
-            <div className="w-1/3 min-w-[400px] h-20 mt-20 flex justify-center items-center bg-slate-300 rounded-2xl text-2xl">
+            <div className="w-sm md:w-md lg:w-lg h-20 mt-20 flex justify-center items-center bg-slate-300 rounded-2xl text-2xl">
                 <Input
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
