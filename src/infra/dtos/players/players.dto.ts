@@ -1,6 +1,7 @@
 export type PlayerRequestDto = {
     name: string;
-    ranking: number;
+    points: number;
+    ranking?: number;
     country: string;
     forehand: string;
     backhand: string;
@@ -13,7 +14,8 @@ export type PlayerRequestDto = {
 export type PlayerResponseDto = {
     id: string;
     name: string;
-    ranking: number;
+    points: number;
+    ranking?: number;
     country: string;
     forehand: string;
     backhand: string;

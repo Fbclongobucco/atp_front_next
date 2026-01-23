@@ -38,7 +38,6 @@ export function CardDetails({ player, isOpen, onClose }: CardDetailsProps) {
                     </button>
             {player && (
                 <Card className="w-sm md:w-md lg:w-lg animate__animated animate__backInDown">
-                 
                     <CardHeader>
                         <CardTitle>
                             <span className="text-cyan-800 text-2xl">#{player.ranking}</span> <span className="text-slate-600 text-2xl font-mono ml-3">{player.name}</span>

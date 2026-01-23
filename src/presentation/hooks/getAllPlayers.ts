@@ -23,6 +23,7 @@ export const useFetchPlayers = (initialPage: number = 0, initialSize: number = 1
     const [page, setPage] = useState(initialPage);
     const [size, setSize] = useState(initialSize);
     const [totalPages, setTotalPages] = useState(0);
+    
 
     const playerService = new PlayerService(new PlayerRepositoryImpl());
 
