@@ -7,7 +7,7 @@ import { Header } from "@/presentation/my-components/header";
 import { ListRanking } from "@/presentation/my-components/list-ranking";
 import { RankingListControll } from "@/presentation/my-components/ranking-list-controll";
 import { SearchPlayerModal } from "@/presentation/my-components/search-player";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
   const [isCardDetailsOpen, setIsCardDetailsOpen] = useState(false);
   const [selectedPlayer, setSelectedPlayer] = useState<PlayerResponseDto | null>(null);
   const { nextPage, prevPage, reSize, page, size, players } = useFetchPlayers();
-  const [rankingIndex, setRankingIndex] = useState<number[]>([]);
+  
 
   const handlePlayerSelected = (player: PlayerResponseDto) => {
     setSelectedPlayer(player);

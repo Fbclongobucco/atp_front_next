@@ -15,8 +15,7 @@ export function RankingListControll({ nextPage, prevPage, reSize, page, size, to
         <div className="flex flex-col gap-2 w-sm md:w-md lg:w-2xl mt-25 mb-2 bg-slate-200 rounded-md">
             <h2 className="font-semibold text-2xl text-slate-600 p-2">ATP <span className="text-lg italic font-bold text-blue-400 tracking-wide">RANKING</span></h2>
             <div className="flex justify-between mx-2 pb-4">
-                <button disabled={page === 0}  onClick={prevPage} className="w-10 h-10 rounded-full bg-slate-400 flex items-center justify-center cursor-pointer border border-slate-500 shadow-lg">
-
+                <button disabled={page === 0}  onClick={prevPage} className="w-10 h-10 rounded-full bg-slate-400 flex items-center justify-center cursor-pointer border border-slate-500 shadow-lg disabled:opacity-50 ">
                     < ArrowLeft size={22} color="#302e46" />
                 </button>
                 <div className="flex justify-center items-center text-slate-600">

@@ -44,7 +44,7 @@ export function CardDetails({ player, isOpen, onClose }: CardDetailsProps) {
                         </CardTitle>
                     </CardHeader>
                     <CardContent className="flex justify-center gap-2 lg:gap-10">
-                       {player.urlPhoto ===  "https://placehold.co/400x400.png" ? <div className="w-45 h-90 flex justify-center items-center "><User size={200}color="#302e46" /></div> :   <img src={player.urlPhoto} alt="logo" width={200} className="object-cover border rounded  shadow-slate-500 shadow-md bg-slate-300" />}
+                       {player.urlPhoto ===  null ? <div className="w-45 h-90 flex justify-center items-center "><User size={200}color="#302e46" /></div> :   <img src={player.urlPhoto} alt="logo" width={200} className="object-cover border rounded  shadow-slate-500 shadow-md bg-slate-300" />}
                         <div className="flex flex-col text-xs md:text-lg gap-6 font-medium text-slate-600">
                             <p className="bg-slate-200 rounded p-1">Forehand: <span className="tracking-wide">{player.forehand}</span></p>
                             <p className="bg-slate-200 rounded p-1">Backhand: <span className="tracking-wide">{player.backhand}</span></p>

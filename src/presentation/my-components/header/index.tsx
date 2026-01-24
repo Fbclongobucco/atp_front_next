@@ -9,7 +9,7 @@ export function Header({onSearchClick}: HeaderProps) {
 
     
     return (
-        <header className="w-full h-24 bg-cyan-950 flex items-center justify-center fixed top-0">
+        <header className="w-full h-24 bg-cyan-950 flex items-center justify-center fixed top-0 z-50">
             <div className="w-6xl mx-4 flex items-center justify-between">
                 <div className="bg-slate-200 p-2 rounded-2xl">
                     <Image src="/assets/ATP_tour_logo.png" alt="logo" width={100} height={100} />
