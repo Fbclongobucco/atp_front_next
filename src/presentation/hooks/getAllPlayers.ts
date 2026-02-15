@@ -32,7 +32,6 @@ export const useFetchPlayers = (initialPage: number = 0, initialSize: number = 1
         setError(null);
         try {
             const data = await playerService.getAllPlayers(p, s);
-            console.log(data)
             setTotalPages(data.length);
             setPlayers(data);
         } catch (err) {
@@ -63,7 +62,7 @@ export const useFetchPlayers = (initialPage: number = 0, initialSize: number = 1
         }
         setSize(size);
     };
-    console.log(players)
+    
 
     return { players, isLoading, error, nextPage, prevPage, reSize, size, page, totalPages };
 };

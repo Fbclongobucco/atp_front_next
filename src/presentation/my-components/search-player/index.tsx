@@ -30,7 +30,7 @@ export function SearchPlayerModal({ isVisible, onClose, setPlayer }: SearchPlaye
 
     return (
         <div className={`${isVisible ? 'flex' : 'hidden'} w-full  h-full  absolute 
-              backdrop-blur-md bg-white/30 flex justify-center items-start`}>
+              backdrop-blur-md bg-white/30 flex justify-center items-start z-50`}>
             <button onClick={handleClose} className="absolute top-4 right-10 w-10 h-10 border flex justify-center items-center rounded-sm cursor-pointer">
                 <X size={30} color="#e3e1f0" />
             </button>

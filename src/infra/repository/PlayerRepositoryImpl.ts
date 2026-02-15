@@ -26,7 +26,6 @@ export class PlayerRepositoryImpl implements PlayerRepository {
     }
     async getAllPlayers(page?: number, size?: number): Promise<Player[]> {
         const { data } = await api.get<Player[]>(`/players?page=${page}&size=${size}`);
-        console.log(data)
         return data;
     }
 }
